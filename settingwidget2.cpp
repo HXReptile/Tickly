@@ -7,6 +7,7 @@ settingwidget2::settingwidget2(QWidget *parent)
     , ui(new Ui::settingwidget2)
 {
     ui->setupUi(this);
+    setWindowTitle("设置");
     setWindowFlags(Qt::Window);
     ui->checkBox_autostart->setChecked(isAutoStartEnabled());
     connect(ui->checkBox_autostart,&QCheckBox::toggled,this,&settingwidget2::slots_isAutoStart);
