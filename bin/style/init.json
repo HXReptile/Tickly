@@ -1,0 +1,4 @@
+QPushButton#btn_ok 
+{ 
+background-color: green; 
+}

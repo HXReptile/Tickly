@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>re/Upload.png</file>
+        <file>re/delete.png</file>
+        <file>re/home-1.png</file>
+        <file>re/power.png</file>
+        <file>re/settings.png</file>
+        <file>re/alarm.png</file>
+    </qresource>
+</RCC>

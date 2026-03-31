@@ -1,0 +1,42 @@
+[
+    {
+        "enabled": true,
+        "id": "21323",
+        "interval": 2,
+        "message": "站起来，持续1-2分钟",
+        "name": "站起来",
+        "notificationType": 0,
+        "order": 0,
+        "skipHolidays": true,
+        "skipSaturdays": true,
+        "skipSundays": true,
+        "timeRanges": [
+            {
+                "end": "11:20",
+                "start": "09:00"
+            },
+            {
+                "end": "20:00",
+                "start": "13:30"
+            }
+        ]
+    },
+    {
+        "enabled": true,
+        "id": "6565465",
+        "interval": 90,
+        "message": "离开工位，持续5分钟",
+        "name": "离开工位",
+        "notificationType": 0,
+        "order": 1,
+        "skipHolidays": true,
+        "skipSaturdays": true,
+        "skipSundays": true,
+        "timeRanges": [
+            {
+                "end": "20:00",
+                "start": "09:00"
+            }
+        ]
+    }
+]
