@@ -1,10 +1,12 @@
 #ifndef COMMON_UTILS_H
 #define COMMON_UTILS_H
+#include <DailyLogger.h>
 #include <QString>
 #include <QVector>
 #define ROOT_PATH QApplication::applicationDirPath() + "/"
 #define DATA_PATH ROOT_PATH + "data/person_data.json"
 #define STYLE_PATH ROOT_PATH + "style/init.json"
+#define LOG_PATH ROOT_PATH + "log"
 #define TIME_FORMAT "HH:mm"
 struct TimeRange {
     QString start;

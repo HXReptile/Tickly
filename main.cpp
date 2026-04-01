@@ -3,6 +3,8 @@
 #include <QApplication>
 #include <QFile>
 #include <QJsonDocument>
+#include <common_utils.h>
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -18,6 +20,8 @@ int main(int argc, char *argv[])
     //     return -1;
     // QString qss = doc.toVariant().toString();
     // qApp->setStyleSheet(qss);
+
+    DailyLogger::setLogDir(LOG_PATH);
 
     MainWindow w;
     // w.show();

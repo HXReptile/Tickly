@@ -9,6 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 DESTDIR = $$PWD/bin
 SOURCES += \
+    DailyLogger.cpp \
     itemwidget.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
     toastmanager.cpp
 
 HEADERS += \
+    DailyLogger.h \
     common_utils.h \
     itemwidget.h \
     mainwindow.h \

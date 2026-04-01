@@ -250,6 +250,7 @@ void MainWindow::slots_test()
 
 void MainWindow::slots_timeout()
 {
+    DailyLogger::log(m_showContent);
     ToastManager::show(m_showContent);
 
     qint64 interal = compute_time();
