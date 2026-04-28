@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "settingwidget.h"
+#include "remindwidget.h"
 #include <QUuid>
 #include <QFile>
 #include <QFileInfo>
@@ -251,7 +252,10 @@ void MainWindow::slots_test()
 void MainWindow::slots_timeout()
 {
     DailyLogger::log(m_showContent);
-    ToastManager::show(m_showContent);
+    // ToastManager::show(m_showContent);
+    remindwidget* widget = new remindwidget;
+    widget->setText(m_showContent);
+    widget->show();
 
     qint64 interal = compute_time();
     if(interal <= 0){
@@ -290,7 +294,7 @@ void MainWindow::setMenu()
 
     fileMenu->addAction(newAction);
     // fileMenu->addAction(openAction);
-    // fileMenu->addAction(testAction);
+    fileMenu->addAction(testAction);
     fileMenu->addSeparator();
     fileMenu->addAction(exitAction);
 

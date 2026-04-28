@@ -13,6 +13,7 @@ SOURCES += \
     itemwidget.cpp \
     main.cpp \
     mainwindow.cpp \
+    remindwidget.cpp \
     settingwidget.cpp \
     settingwidget2.cpp \
     toast.cpp \
@@ -23,6 +24,7 @@ HEADERS += \
     common_utils.h \
     itemwidget.h \
     mainwindow.h \
+    remindwidget.h \
     settingwidget.h \
     settingwidget2.h \
     toast.h \
@@ -31,6 +33,7 @@ HEADERS += \
 FORMS += \
     itemwidget.ui \
     mainwindow.ui \
+    remindwidget.ui \
     settingwidget.ui \
     settingwidget2.ui \
     toast.ui

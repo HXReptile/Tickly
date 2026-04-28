@@ -58,13 +58,13 @@ DailyLogger::DailyLogger(QObject *parent)
 	: QObject(parent), m_currentDate(QDate::currentDate())
 {
 	// 默认日志目录为应用程序目录下的logs文件夹
-	m_logDirPath = QDir::currentPath()+ "/../var/log/davc_monitor_cal";
+    //m_logDirPath = QDir::currentPath()+ "/../var/log/davc_monitor_cal";
 
 	// 确保日志目录存在
-	QDir logDir(m_logDirPath);
-	if (!logDir.exists()) {
-		logDir.mkpath(".");
-	}
+    // QDir logDir(m_logDirPath);
+    // if (!logDir.exists()) {
+    // 	logDir.mkpath(".");
+    // }
 
 	openLogFile();
 }
